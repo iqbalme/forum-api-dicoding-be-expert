@@ -23,7 +23,7 @@ describe('HTTP server', () => {
       // Action
       const response = await server.inject({
         method: 'GET',
-        url: '/',
+        url: '/dicoding',
       });
 
       // Assert
