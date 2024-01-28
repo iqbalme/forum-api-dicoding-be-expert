@@ -21,7 +21,6 @@ jobs:
           export NVM_DIR=~/.nvm
           source ~/.nvm/nvm.sh
           cd ~/forum-api
-          ls
           git pull origin main
           npm install
           npm run migrate up
