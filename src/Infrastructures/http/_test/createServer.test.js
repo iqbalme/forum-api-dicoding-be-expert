@@ -15,7 +15,7 @@ describe('HTTP server', () => {
     expect(response.statusCode).toEqual(404);
   });
 
-  it('should return 200 and hello world', async () => {
+  it('should return 200 and hello dicoding', async () => {
     // Arrange
     const server = await createServer({});
 
@@ -28,7 +28,7 @@ describe('HTTP server', () => {
     // Assert
     const responseJson = JSON.parse(response.payload);
     expect(response.statusCode).toEqual(200);
-    expect(responseJson.value).toEqual('Hello world!');
+    expect(responseJson.value).toEqual('Hello Dicoding!');
   });
 
   it('should handle server error correctly', async () => {
